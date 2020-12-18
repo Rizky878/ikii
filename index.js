@@ -1860,44 +1860,44 @@ let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'baka'){
-let err = fs.readFileSync('mp3/' + 'baka' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'baka' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'welot'){
-let err = fs.readFileSync('mp3/' + 'welot' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'welot' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'tarekses'){
-let err = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'abngjgo'){
-let err = fs.readFileSync('mp3/' + 'bgjg' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'bgjg' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'roti'){
-let err = fs.readFileSync('mp3/' + 'roti' + '.wav')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'roti' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'salam'){
-let err = fs.readFileSync('mp3/' + 'salam' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'salam' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'goblok'){
-let err = fs.readFileSync('mp3/' + 'goblok' + '.wav')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'goblok' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'pota'){
-let err = fs.readFileSync('mp3/' + 'test2' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'tes2' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'tariksis'){
-let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'tariksis' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'Iri'){
-let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
- conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+let hasil = fs.readFileSync('mp3/' + 'iri' + '.mp3')
+ conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
 }
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
