@@ -1854,12 +1854,12 @@ else if (text == 'baka'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
-else if (text == 'pttt'){
-let hasil = fs.readFileSync('mp3/' + 'pttt' + '.pttt')
+else if (text == 'welot'){
+let hasil = fs.readFileSync('mp3/' + 'welot' + '.mp3')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
-else if (text == 'goblok'){
-let hasil = fs.readFileSync('mp3/' + 'goblok' + '.wav')
+else if (text == 'tarekses'){
+let hasil = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 if (text.includes(".alay")){
