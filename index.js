@@ -28,7 +28,7 @@ const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:𝚁𝙸𝚉𝙺𝚈 𝙵𝙰𝙳𝙸𝙻𝙰𝙷\n' // full name
-            + 'ORG:Owner LENT Bot;\n' // the organization of the contact
+            + 'ORG:Owner Iky Bot;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=6282387804410:+62 823-8780-4410\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
@@ -151,7 +151,7 @@ else if (text == '.mute'){
 conn.sendMessage(id, '📢 FITUR INI HANYA BISA DI GUNAKAN OWNER' ,MessageType.text);
 }
 else if (text == '.owner'){
-conn.sendMessage(id, 'Owner lentbot wa.me/+628165466368' ,MessageType.text);
+conn.sendMessage(id, 'Owner ikybot wa.me/+6282387804410' ,MessageType.text);
 }
 else if (text == 'Rizky'){
 conn.sendMessage(id, '*Ciee lagi ngomongin owner aku ya Aku kepoin ah><*' ,MessageType.text);
@@ -254,6 +254,15 @@ conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.tex
 }
 else if (text == 'Thanks'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+}
+else if (text == 'Tohka'){
+conn.sendMessage(id, '*TOHKA* itu punya kak Stephen😠' ,MessageType.text);
+}
+else if (text == 'Kurumi'){
+conn.sendMessage(id, '*KURUMI* itu punya kak _OWNER KU_😠' ,MessageType.text);
+}
+else if (text == 'Chizuru'){
+conn.sendMessage(id, '*CHIZURU* itu punya kak Rasya😠' ,MessageType.text);
 }
 
 // Fitur
@@ -1844,27 +1853,51 @@ if (text.includes('bot')) {
 }
 if (text.includes("desah")){
 let err = fs.readFileSync('mp3/' + 'desah' + '.mp3')
- conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 if (text.includes("iri")){
 let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'baka'){
-let hasil = fs.readFileSync('mp3/' + 'baka' + '.mp3')
- conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
+let err = fs.readFileSync('mp3/' + 'baka' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'welot'){
-let hasil = fs.readFileSync('mp3/' + 'welot' + '.mp3')
- conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
+let err = fs.readFileSync('mp3/' + 'welot' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'tarekses'){
-let hasil = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
- conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
+let err = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 else if (text == 'abngjgo'){
-let hasil = fs.readFileSync('mp3/' + 'bgjg' + '.mp3')
- conn.sendMessage(id, hasil, MessageType.audio, { ptt: true, quoted: m })
+let err = fs.readFileSync('mp3/' + 'bgjg' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'roti'){
+let err = fs.readFileSync('mp3/' + 'roti' + '.wav')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'salam'){
+let err = fs.readFileSync('mp3/' + 'salam' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'goblok'){
+let err = fs.readFileSync('mp3/' + 'goblok' + '.wav')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'pota'){
+let err = fs.readFileSync('mp3/' + 'test2' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'tariksis'){
+let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'Iri'){
+let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
