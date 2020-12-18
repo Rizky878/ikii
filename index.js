@@ -4,12 +4,12 @@
 * jangan ubah semuanya kecuali nama bot instagram yt itu ajah yg lain jangan!!!
 * hargai pembuat skrip woy!!!
 */
-const XPTN = '𝐌𝐀𝐒𝐋𝐄𝐍𝐓'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/maslent11'; // Nama Instagramlu cok
-const nomer = 'https://Wa.me/+628165466368'; // Nomor whatsapplu cok
+const XPTN = '𝐑𝐈𝐙𝐊𝐘'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com/_rizkyfadilah8'; // Nama Instagramlu cok
+const nomer = 'https://Wa.me/+6282387804410'; // Nomor whatsapplu cok
 const aktif = 'Tergantung jaringan'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // OFFICIAL GRUP LU 1
-const youtube = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // OFFICIAL GRUP LU 2
+const groupwa = 'https://chat.whatsapp.com/LLCSpSL2S8A1NJwTnMIgWY'; // OFFICIAL GRUP LU 1
+const youtube = 'https://chat.whatsapp.com/LLCSpSL2S8A1NJwTnMIgWY'; // OFFICIAL GRUP LU 2
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -27,9 +27,9 @@ const info = require("./lib/info.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:MASLENT CREATOR\n' // full name
+            + 'FN:𝚁𝙸𝚉𝙺𝚈 𝙵𝙰𝙳𝙸𝙻𝙰𝙷\n' // full name
             + 'ORG:Owner LENT Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=628165466368:+62 816-5466-368\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6282387804410:+62 823-8780-4410\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
 const
@@ -79,7 +79,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @iky`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -127,7 +127,7 @@ conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsA
 
 //Chat XP-TN
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, '3aalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'waalaikumsalam, Ketik .help/.info/.donasi Contoh #help' ,MessageType.text);
 }
 else if (text == '.kick'){
 conn.sendMessage(id, '📢 FITUR INI HANYA BISA DI GUNAKAN OWNER' ,MessageType.text);
@@ -153,8 +153,8 @@ conn.sendMessage(id, '📢 FITUR INI HANYA BISA DI GUNAKAN OWNER' ,MessageType.t
 else if (text == '.owner'){
 conn.sendMessage(id, 'Owner lentbot wa.me/+628165466368' ,MessageType.text);
 }
-else if (text == 'maslent'){
-conn.sendMessage(id, 'Aku BOT nya lent' ,MessageType.text);
+else if (text == 'Rizky'){
+conn.sendMessage(id, '*Ciee lagi ngomongin owner aku ya Aku kepoin ah><*' ,MessageType.text);
 }
 else if (text == '.join'){
 conn.sendMessage(id, '📢 FITUR INI HANYA BISA DI GUNAKAN OWNER' ,MessageType.text);
@@ -178,7 +178,7 @@ else if (text == 'Hai'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == '.ttp'){
-conn.sendMessage(id, ' *COMMAND PREMIUM CHAT WA https://wa.me/6289655478810* ' ,MessageType.text);
+conn.sendMessage(id, ' *COMMAND PREMIUM CHAT WA https://wa.me/6282387804410* ' ,MessageType.text);
 }
 else if (text == 'Woi'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
@@ -220,10 +220,10 @@ else if (text == 'Cuy'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == '.frendsowner'){
-conn.sendMessage(id, 'kawan1 maslent wa.me/+628165466368' ,MessageType.text);
+conn.sendMessage(id, 'kawan1 𝐑𝐈𝐙𝐊𝐘 wa.me/+6282387804410' ,MessageType.text);
 }
 else if (text == '.coowner'){
-conn.sendMessage(id, 'kawan2 testing script wa.me/+628165466368' ,MessageType.text);
+conn.sendMessage(id, 'kawan2 testing script wa.me/+6282387804410' ,MessageType.text);
 }
 else if (text == '.groupbot'){
 conn.sendMessage(id, 'group bot whatsapp https://chat.whatsapp.com/GDdd0I3WlF5LnMVifmS7rN' ,MessageType.text);
@@ -1837,7 +1837,7 @@ let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
 if (text.includes('bot')) {
  var nomor = m.participant
  const options = {
-       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       text: `ada apa sayang manggil manggil ketik .help @${nomor.split("@s.whatsapp.net")[0]}, untuk menampilkan fitur fitur bot ya`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
