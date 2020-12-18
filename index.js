@@ -1918,8 +1918,3 @@ if (text.includes("!alay")){
 		conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
-
-//Tolonglah bro jangan di ubah ubah Rizky
-
-
-})
