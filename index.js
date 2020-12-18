@@ -1855,11 +1855,15 @@ let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'welot'){
-let hasil = fs.readFileSync('mp3/' + 'welot' + '.mp3')
+let hasil = fs.readFileSync('mp3/' + 'welot' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 else if (text == 'tarekses'){
-let hasil = fs.readFileSync('mp3/' + 'tarekses' + '.mp3')
+let hasil = fs.readFileSync('mp3/' + 'tarekses' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
+else if (text == 'bgjg'){
+let hasil = fs.readFileSync('mp3/' + 'bgjg' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 if (text.includes(".alay")){
